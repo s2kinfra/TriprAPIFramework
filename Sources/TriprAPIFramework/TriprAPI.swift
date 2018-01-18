@@ -5,8 +5,6 @@
 //  Created by Daniel Skevarp on 2018-01-02.
 //  Copyright © 2018 Daniel Skevarp. All rights reserved.
 //
-//another commit comment
-
 import Foundation
 
 enum APIEnviroment {
