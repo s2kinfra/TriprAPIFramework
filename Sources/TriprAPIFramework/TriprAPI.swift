@@ -5,6 +5,7 @@
 //  Created by Daniel Skevarp on 2018-01-02.
 //  Copyright © 2018 Daniel Skevarp. All rights reserved.
 //
+//another commit comment
 
 import Foundation
 
@@ -111,7 +112,7 @@ final class TriprAPI {
     func loginUser(username: String, password: String, completionHandler: (TriprAPIStatusResponse, TriprUser?)->Void ) throws {
         
         let bodyLoginUser = triprMessageUserLogin.init(email: username, password: password)
-        
+//just adding a comment        
     
         guard let message = triprAPIMessage.init(payload: bodyLoginUser, httpMethod: triprAPIEndpointURLs.user_login(baseURL: baseURL).method, contentType: .json, URL: triprAPIEndpointURLs.user_login(baseURL: baseURL).url, quable: true, priority: .high) else {
             throw VendingMachineError.outOfStock
